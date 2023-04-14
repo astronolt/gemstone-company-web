@@ -10,9 +10,14 @@ import './App.scss';
 const Layout = () => {
   return (
     <div className="app w-full overflow-hidden text-white">
-      <Navbar />
-      <Outlet />
-      <Footer />
+      <div className={`paddingX flexCenterNav`}>
+        <div className={`boxWidth`}>
+          <Navbar />
+        </div>
+      </div>
+      
+      {/* <Outlet />
+      <Footer /> */}
     </div>
   );
 };
