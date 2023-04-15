@@ -15,9 +15,14 @@ const Layout = () => {
           <Navbar />
         </div>
       </div>
-      
-      {/* <Outlet />
-      <Footer /> */}
+
+      <div className={`bg-primary flexCenter`}>
+        <div className={`boxWidth`}>
+          <Outlet />
+        </div>
+      </div>
+
+      <Footer />
     </div>
   );
 };

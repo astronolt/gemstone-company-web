@@ -7,8 +7,9 @@ import Slider from '../../components/Slider/Slider'
 const Home = () => {
   return (
     <div className='home'>
+      {/* 
       <Slider/>
-      {/* <FeaturedProducts type="featured"/>
+      <FeaturedProducts type="featured"/>
       <Categories/>
       <FeaturedProducts type="trending"/>
       <Contact/> */}

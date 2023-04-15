@@ -1,62 +1,64 @@
-import { shop } from "../../constants";
-import "./Footer.scss";
+import { shop, footerLinks, socialMedia } from "../../constants";
 
-const Footer = () => {
-  return (
-    <div className="footer">
-      <div className="top">
-        <div className="item">
-          <h1>Categories</h1>
-          <span>Women</span>
-          <span>Men</span>
-          <span>Shoes</span>
-          <span>Accessories</span>
-          <span>New Arrivals</span>
-        </div>
-        <div className="item">
-          <h1>Links</h1>
-          <span>FAQ</span>
-          <span>Pages</span>
-          <span>Stores</span>
-          <span>Compare</span>
-          <span>Cookies</span>
-        </div>
-        <div className="item">
-          <h1>About</h1>
-          <span>
-            We have been in operation since 1974 and have a fascinating history.
-            <button>
-              <a href="/about">LEARN ALL ABOUT US </a>
-            </button>
-          </span>
-        </div>
-        <div className="item">
-          <h1>Contact</h1>
-          <div>
-            {shop.phone}
-          </div>
-          <span>
-            Please note that our normal office hours are 9am to 5:30pm Monday to Friday
-            and we are 8 hours ahead of Eastern Standard time and 2/3 hours ahead of GMT (depending on British summertime).
-          </span>
-        </div>
+const Footer = () => (
+   <section className={`flexCenter paddingY flex-col`}>
+      <div className={`flexStart md:flex-row flex-col mb-8 w-full`}>
+         <div className="flex-[1] flex flex-col justify-start mr-10">
+            <div className="block">
+               <img
+                  src="/logo.svg"
+                  alt="logo"
+                  width={30}
+               />
+               {shop.name}
+            </div>
+
+            <p className={`paragraph mt-4 max-w-[312px]`}>
+               {shop.tagline}
+            </p>
+         </div>
+
+         <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
+            {footerLinks.map((footerlink) => (
+               <div key={footerlink.title} className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
+                  <h4 className="font-default font-medium text-[18px] leading-[27px] text-white">
+                     {footerlink.title}
+                  </h4>
+                  <ul className="list-none mt-4">
+                     {footerlink.links.map((link, index) => (
+                        <li
+                           key={link.name}
+                           className={`font-default font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
+                              }`}
+                        >
+                           {link.name}
+                        </li>
+                     ))}
+                  </ul>
+               </div>
+            ))}
+         </div>
       </div>
-      <div className="bottom">
-        <div className="left">
-          <span className="logo">
-            <img src="/logo.svg" alt="LOGO" width={30} />
-            {shop.name}
-          </span>
-          <span className="copyright">
-            © Copyright 2023. All Rights Reserved
-          </span>
-        </div>
-        <div className="right">
-          <img src="/img/payment.png" alt="" />
-        </div>
+
+      <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
+         <p className="font-default font-normal text-center text-[18px] leading-[27px] text-white">
+            &copy; {new Date().getFullYear()} {shop.name}. All Rights Reserved.
+         </p>
+
+         <div className="flex flex-row md:mt-0 mt-6">
+            {socialMedia.map((social, index) => (
+               <img
+                  key={social.id}
+                  src={social.icon}
+                  alt={social.id}
+                  className={`w-[21px] h-[21px] object-contain cursor-pointer ${index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
+                     }`}
+                  onClick={() => window.open(social.link)}
+               />
+            ))}
+         </div>
       </div>
-    </div>
-  );
-};
+   </section>
+);
 
 export default Footer;

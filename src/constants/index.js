@@ -1,47 +1,72 @@
+import { facebook, instagram, linkedin, twitter } from "../assets";
+
+
 export const shop = {
    name: "real sparkler",
+   tagline: "Gemstone Company & Luxury Pieces.",
    phone: "+1 617 465 8768",
 };
 
-export const navLinksRight = [
-   {
-      id: "home",
-      title: "Home",
-      url: "/",
-   },
-   {
-      id: "features",
-      title: "Features",
-   },
-   {
-      id: "product",
-      title: "Product",
-   },
-   {
-      id: "clients",
-      title: "Clients",
-   },
-];
 
 export const navLinksLeft = [
    {
-      id: "home",
-      title: "Home",
+      id: "rare-gemstones",
+      title: "Rare Gemstones",
+      url: "/rare-gemstones",
    },
    {
-      id: "features",
-      title: "Features",
-   },
-   {
-      id: "product",
-      title: "Product",
-   },
-   {
-      id: "clients",
-      title: "Clients",
+      id: "handmade-jewelry",
+      title: "Handmade Jewelry",
+      url: "/handmade-jewelry",
    },
 ];
 
+export const navLinksRight = [
+   {
+      id: "ruby",
+      title: "RUBY",
+      url: "/gem/ruby",
+   },
+   {
+      id: "spinel",
+      title: "SPINEL",
+      url: "/gem/spinel",
+   },
+   {
+      id: "sapphire",
+      title: "SAPPHIRE",
+      url: "/gem/sapphire",
+   },
+   // {
+   //    id: "aquamarine",
+   //    title: "AQUAMARINE",
+   //    url: "/gem/aquamarine",
+   // },
+   // {
+   //    id: "tsavorite",
+   //    title: "Tsavorite",
+   //    url: "/gem/tsavorite",
+   // },
+];
+
+
+export const navLinksMore = [
+   {
+      id: "about-company",
+      title: "About The Company",
+      url: "/about-company",
+   },
+   {
+      id: "why-us",
+      title: "Why Us?",
+      url: "/why-us",
+   },
+   {
+      id: "world-wide-shipping",
+      title: "World Wide Shipping",
+      url: "/world-wide-shipping",
+   }
+];
 
 export const footerLinks = [
    {
@@ -106,5 +131,29 @@ export const footerLinks = [
             link: "https://www.hoobank.com/become-a-partner/",
          },
       ],
+   },
+];
+
+
+export const socialMedia = [
+   {
+      id: "social-media-1",
+      icon: instagram,
+      link: "https://www.instagram.com/",
+   },
+   {
+      id: "social-media-2",
+      icon: facebook,
+      link: "https://www.facebook.com/",
+   },
+   {
+      id: "social-media-3",
+      icon: twitter,
+      link: "https://www.twitter.com/",
+   },
+   {
+      id: "social-media-4",
+      icon: linkedin,
+      link: "https://www.linkedin.com/",
    },
 ];

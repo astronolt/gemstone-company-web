@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import { close, menu } from "../../assets";
-import { shop, navLinksRight, navLinksLeft } from "../../constants";
+import { shop, navLinksRight, navLinksLeft, navLinksMore } from "../../constants";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -11,6 +11,10 @@ import "./Navbar.scss"
 const Navbar = () => {
 
    const [toggle, setToggle] = useState(false);
+   const navLinkMobile = [
+      ...navLinksLeft,
+      ...navLinksMore
+   ];
 
    return (
       <nav className='w-full navbar'>
@@ -73,25 +77,41 @@ const Navbar = () => {
 
             </div>
          </div>
+
          {/* {open && <Cart/>} */}
+
+
+
+         {/* NAV BAR MORE*/}
+         <div className='item list-none hidden sm:flex justify-center items-center border-2 p-2 overflow'>
+            {navLinksMore.map((nav, index) => (
+               <Link
+                  key={nav.id}
+                  to={nav.url}
+                  className={`font-default text-white font-normal cursor-pointer text-[16px]
+                     ${index === navLinksMore.length - 1 ? 'mr-0' : 'mr-10'}`}
+               >
+                  {nav.title}
+               </Link>
+            ))}
+         </div>
 
 
          { /** mobile menu */}
          <div className='sm:hidden flex flex-1 justify-end items-center cursor-pointer'>
 
             <div
-               className={`${toggle ? 'flex' : 'hidden'} p-4 bg-red-gradient/ bg-[#333] absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+               className={`${toggle ? 'flex' : 'hidden'} p-4 bg-red-gradient/ bg-[#333] absolute top-20 right-0 mx-4 my-2 w-[100%] mx-auto my-auto min-w-[140px] rounded sidebar`}
             >
                <ul
                   className='list-none flex flex-col justify-end items-center flex-1'>
 
-                  {navLinksRight.map((nav, index) => (
+                  {navLinkMobile.map((nav, index) => (
                      <li
                         key={nav.id}
-                        className={`font-poppins font-normal cursor-pointer text-[16px] text-white
-                  ${index === navLinksRight.length - 1 ? 'mr-0' : 'mb-10'}`}
+                        className={`font-poppins font-normal cursor-pointer text-[14px] border w-[100%] p-2 my-1`}
                      >
-                        <a href={`#${nav.id}`}>
+                        <a className={`text-white`} href={`#${nav.id}`}>
                            {nav.title}
                         </a>
                      </li>
