@@ -8,28 +8,29 @@ import 'swiper/css';
 import './Slider.scss'
 
 export default () => {
-   return (
-
+  return (
+    <div className="swiperHolder">
       <Swiper
-         modules={[Autoplay]}
-         spaceBetween={30}
-         autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-         }}
-         onSlideChange={() => console.log('slide change')}
-         onSwiper={(swiper) => console.log(swiper)}
-         className="mySwiper"
+        modules={[Autoplay]}
+        spaceBetween={30}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+        className="mySwiper"
       >
-         <SwiperSlide>
-            <img src={spinners1} alt="" />
-         </SwiperSlide>
-         <SwiperSlide>
-            <img src={spinners2} alt="" />
-         </SwiperSlide>
-         <SwiperSlide>
-            <img src={spinners3} alt="" />
-         </SwiperSlide>
+        <SwiperSlide>
+          <img src={spinners1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={spinners2} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={spinners3} alt="" />
+        </SwiperSlide>
       </Swiper>
-   );
+    </div>
+  );
 };

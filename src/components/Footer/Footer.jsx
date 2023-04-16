@@ -1,4 +1,5 @@
 import { shop, footerLinks, socialMedia } from "../../constants";
+import "./Footer.scss";
 
 const Footer = () => (
    <section className={`flexCenter paddingY flex-col`}>
@@ -56,6 +57,13 @@ const Footer = () => (
       </div>
 
       <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
+         
+      <div className="footer-bottom">
+        <div className="right">
+          <img src="/img/payment.png" alt="" />
+        </div>
+      </div>
+      
          <p className="font-default font-normal text-center text-[18px] leading-[27px] text-white">
             &copy; {new Date().getFullYear()} {shop.name}. All Rights Reserved.
          </p>

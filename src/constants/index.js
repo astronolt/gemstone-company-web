@@ -2,7 +2,7 @@ import { facebook, instagram, linkedin, twitter } from "../assets";
 
 
 export const shop = {
-   name: "real sparkler",
+   name: "Real Sparkler",
    tagline: "Gemstone Company & Luxury Pieces.",
    phone: "+1 617 465 8768",
 };
