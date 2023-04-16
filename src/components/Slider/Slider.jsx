@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
-import { spinners1, spinners2 } from "../../assets";
+import { spinners1, spinners2, spinners3 } from "../../assets";
 import "./Slider.scss";
 
 const Slider = () => {
@@ -23,9 +23,10 @@ const Slider = () => {
   return (
     <div className="slider">
       <div className="container" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
-        <img src={data[0]} alt="" />
-        <img src={data[1]} alt="" />
-        <img src={data[2]} alt="" />
+        <img src={spinners1} alt="" />
+        <img src={spinners2} alt="" />
+        <img src={spinners3} alt="" />
+        <img src={spinners3} alt="" />
       </div>
       <div className="icons">
         <div className="icon" onClick={prevSlide}>

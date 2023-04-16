@@ -3,19 +3,30 @@ import { shop, footerLinks, socialMedia } from "../../constants";
 const Footer = () => (
    <section className={`flexCenter paddingY flex-col`}>
       <div className={`flexStart md:flex-row flex-col mb-8 w-full`}>
-         <div className="flex-[1] flex flex-col justify-start mr-10">
-            <div className="block">
-               <img
-                  src="/logo.svg"
-                  alt="logo"
-                  width={30}
-               />
+         <div className="flex-[1] flex flex-col justify-start mr-10 max-w-[312px]">
+            <img
+               src="/logo.svg"
+               alt="logo"
+               width={30}
+            />
+            <p className={`paragraph text-[30px] mt-4 max-w-[312px]`}>
                {shop.name}
-            </div>
-
-            <p className={`paragraph mt-4 max-w-[312px]`}>
+            </p>
+            <p className={`mt-4 max-w-[312px]`}>
                {shop.tagline}
             </p>
+            <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
+               <h4 className="font-default font-medium text-[18px] leading-[27px] text-white">
+                  Contact
+               </h4>
+               <div>
+                  {shop.phone}
+               </div>
+               <span className="font-default font-normal text-[16px] leading-[24px] text-dimWhite">
+                  Please note that our normal office hours are 9am to 5:30pm Monday to Friday
+                  and we are 8 hours ahead of Eastern Standard time and 2/3 hours ahead of GMT (depending on British summertime).
+               </span>
+            </div>
          </div>
 
          <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
@@ -37,6 +48,7 @@ const Footer = () => (
                   </ul>
                </div>
             ))}
+            
          </div>
       </div>
 
