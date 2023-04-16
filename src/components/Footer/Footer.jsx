@@ -4,14 +4,17 @@ const Footer = () => (
    <section className={`flexCenter paddingY flex-col`}>
       <div className={`flexStart md:flex-row flex-col mb-8 w-full`}>
          <div className="flex-[1] flex flex-col justify-start mr-10 max-w-[312px]">
-            <img
-               src="/logo.svg"
-               alt="logo"
-               width={30}
-            />
-            <p className={`paragraph text-[30px] mt-4 max-w-[312px]`}>
-               {shop.name}
-            </p>
+            <div>
+               <img className="inline"
+                  src="/logo.svg"
+                  alt="logo"
+                  width={30}
+               />
+               <span className={`capitalize align-bottom paragraph text-[30px] mt-4 max-w-[312px]`}>
+                  {shop.name}
+               </span>
+            </div>
+
             <p className={`mt-4 max-w-[312px]`}>
                {shop.tagline}
             </p>
@@ -48,7 +51,7 @@ const Footer = () => (
                   </ul>
                </div>
             ))}
-            
+
          </div>
       </div>
 

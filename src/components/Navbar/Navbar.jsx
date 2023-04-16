@@ -101,20 +101,20 @@ const Navbar = () => {
          <div className='sm:hidden flex flex-1 justify-end items-center cursor-pointer'>
 
             <div
-               className={`${toggle ? 'flex' : 'hidden'} p-4 bg-red-gradient/ bg-[#333] absolute top-20 right-0 mx-4 my-2 w-[100%] mx-auto my-auto min-w-[140px] rounded sidebar`}
+               className={`${toggle ? 'flex' : 'hidden'} z-10 p-4 bg-red-gradient/ bg-[#3339] absolute top-20 right-0 mx-4 my-2 w-[100%] mx-auto my-auto min-w-[140px] rounded sidebar`}
             >
                <ul
-                  className='list-none flex flex-col justify-end items-center flex-1'>
+                  className='bg-[#333] list-none flex flex-col justify-end items-center flex-1'>
 
                   {navLinkMobile.map((nav, index) => (
-                     <li
-                        key={nav.id}
-                        className={`font-poppins font-normal cursor-pointer text-[14px] border w-[100%] p-2 my-1`}
-                     >
-                        <a className={`text-white`} href={`#${nav.id}`}>
+                     <a className={`text-white font-poppins font-normal cursor-pointer text-[14px] border w-[100%] p-2 my-1 hover:bg-[#444]`} href={`#${nav.id}`}>
+                        <li
+                           key={nav.id}
+                           className={``}
+                        >
                            {nav.title}
-                        </a>
-                     </li>
+                        </li>
+                     </a>
                   ))}
 
                </ul>
