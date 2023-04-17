@@ -1,86 +1,89 @@
 import React from "react";
-import "./Categories.scss";
 import { Link } from "react-router-dom";
+import "./Categories.scss";
+import { tsavorite, rhodolite, aquamarine, rarities, rockKnuckle } from "../../assets/"
+
 
 const Categories = () => {
   return (
     <div className="categories">
-      <div className="col">
-        <div className="row">
+      <div className="hidden sm:flex col">
+        <div className="flex row">
           <img
-            src="https://images.pexels.com/photos/818992/pexels-photo-818992.jpeg?auto=compress&cs=tinysrgb&w=1600"
-            alt=""
+            src={rockKnuckle}
+            alt="rockKnuckle"
           />
           <button>
-            <Link className="link" to="/products/1">
-              Sale
+            <Link className="link text-black" to="/products/1">
+              Rock Sale
             </Link>
           </button>
         </div>
-        <div className="row">
-          <img
-            src="https://images.pexels.com/photos/2036646/pexels-photo-2036646.jpeg?auto=compress&cs=tinysrgb&w=1600"
-            alt=""
+        <div className="bg-red-gradient hidden sm:flex row">
+          <img            
+            src={rhodolite}
+            alt="rhodolite"
+            style={{ objectFit: "contain" }}
           />
           <button>
             <Link to="/products/1" className="link">
-              Women
+              rhodolite
             </Link>
           </button>
         </div>
       </div>
-      <div className="col">
-        <div className="row">
+      <div className="hidden md:flex col">
+        <div className="flex row">
           {" "}
           <img
-            src="https://images.pexels.com/photos/1813947/pexels-photo-1813947.jpeg?auto=compress&cs=tinysrgb&w=1600"
-            alt=""
+            src={rarities}
+            alt="rarities"
           />
           <button>
             <Link to="/products/1" className="link">
-              New Season
+              More Rarities
             </Link>
           </button>
         </div>
       </div>
-      <div className="col col-l">
-        <div className="row">
-          <div className="col">
-            <div className="row">
+      <div className="flex col col-l">
+        <div className="flex row">
+          <Link to="/gems/tsavorite" className="flex col">
+            <div className="bg-green-gradient flex row">
               <img
-                src="https://images.pexels.com/photos/1192609/pexels-photo-1192609.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                alt=""
+                src={tsavorite}
+                alt="tsavorite"
+                style={{ objectFit: "contain" }}
               />
-              <button>
-                <Link to="/products/1" className="link">
-                  Men
-                </Link>
+              <button className="text-white link">
+                tsavorite
               </button>
             </div>
-          </div>
-          <div className="col">
-            <div className="row">
+          </Link>
+          <div className="flex col">
+            <div className="bg-black-gradient flex row">
               {" "}
               <img
-                src="https://images.pexels.com/photos/2703202/pexels-photo-2703202.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                alt=""
+                src={aquamarine}
+                alt="aquamarine"
+                style={{ objectFit: "contain" }}
               />
               <button>
                 <Link to="/products/1" className="link">
-                  Accessories
+                  aquamarine
                 </Link>
               </button>
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="flex row">
           <img
-            src="https://images.pexels.com/photos/1159670/pexels-photo-1159670.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            src="https://images.pexels.com/photos/9838851/pexels-photo-9838851.jpeg"
             alt=""
           />
           <button>
             <Link to="/products/1" className="link">
-              Shoes
+              Handmade Jewelries
             </Link>
           </button>
         </div>

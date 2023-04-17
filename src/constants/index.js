@@ -7,7 +7,6 @@ export const shop = {
    phone: "+1 617 465 8768",
 };
 
-
 export const navLinksLeft = [
    {
       id: "rare-gemstones",
@@ -58,7 +57,7 @@ export const navLinksMore = [
    },
    {
       id: "why-us",
-      title: "Why Us?",
+      title: "Why Choose Us?",
       url: "/why-us",
    },
    {
@@ -67,6 +66,22 @@ export const navLinksMore = [
       url: "/world-wide-shipping",
    }
 ];
+
+
+
+export const navLinks = {
+   ...navLinksLeft,
+   ...navLinksRight,
+   ...navLinksMore,
+};
+
+
+export const shopAbout = {
+   story: "Real Sparkler",
+   tagline: "Gemstone Company & Luxury Pieces.",
+   phone: "+1 617 465 8768",
+};
+
 
 export const footerLinks = [
    {

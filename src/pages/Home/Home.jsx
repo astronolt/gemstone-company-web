@@ -1,9 +1,9 @@
-import React from 'react'
-import Slider from '../../components/Slider/Slider'
-//import Hero from "../../components/Hero/Hero";
+import React from 'react';
+import Slider from '../../components/Slider/Slider';
 import Story from '../../components/Story/Story';
-// import Categories from '../../components/Categories/Categories'
-// import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts';
+import Categories from '../../components/Categories/Categories';
+//import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts';
+//import Hero from "../../components/Hero/Hero";
 // import Contact from '../../components/Contact/Contact'
 import "./Home.scss";
 
@@ -14,10 +14,10 @@ const Home = () => {
     <div className='home'>
       <Slider/>
       <Story/>
+      <Categories/>
       {/* 
       <FeaturedProducts type="featured"/>
       <Hero/>
-      <Categories/>
       <FeaturedProducts type="trending"/>
       <Contact/>
       */}

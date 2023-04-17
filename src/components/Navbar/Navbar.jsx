@@ -38,7 +38,13 @@ const Navbar = () => {
 
             <div className="center">
                <Link className="link" to="/">
-                  <img src="/logo.svg" alt="logo" className='w-[50px] mx-[17px] py-[30px]' />
+                  <span className='hidden lg:inline'>
+                     Real
+                  </span>
+                  <img src="/logo.svg" alt="logo" className='inline w-[40px] mx-[5px] py-[10px]' />
+                  <span className='hidden lg:inline'>
+                     Sparklers
+                  </span>                  
                </Link>
             </div>
 

@@ -158,6 +158,16 @@ background: linear-gradient(
   );
 }
 
+
+.bg-green-gradient {
+  background: linear-gradient(
+    147.39deg,
+    #fff -278.56%,
+    #6f53ac -78.47%,
+    #0d793f 51.61%
+  );
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -168,13 +178,13 @@ a:hover {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  border-radius: 2px;
+  border: 1px solid #aaa8;
+  padding: 0.4em 0.8em;
+  /* font-size: 1em;
+  font-weight: 500; */
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #1f1b1c;
   cursor: pointer;
   transition: border-color 0.25s;
 }
