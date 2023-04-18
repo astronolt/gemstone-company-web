@@ -1,9 +1,10 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import List from "../../components/List/List";
-import useFetch from "../../hooks/useFetch";
+// import List from "../../components/List/List";
+// import useFetch from "../../hooks/useFetch";
+
 import "./Products.scss";
+
 
 const Products = () => {
   const catId = parseInt(useParams().id);
@@ -11,20 +12,20 @@ const Products = () => {
   const [sort, setSort] = useState(null);
   const [selectedSubCats, setSelectedSubCats] = useState([]);
 
-  const { data, loading, error } = useFetch(
-    `/sub-categories?[filters][categories][id][$eq]=${catId}`
-  );
+  // const { data, loading, error } = useFetch(
+  //   `/sub-categories?[filters][categories][id][$eq]=${catId}`
+  // );
 
-  const handleChange = (e) => {
-    const value = e.target.value;
-    const isChecked = e.target.checked;
+  // const handleChange = (e) => {
+  //   const value = e.target.value;
+  //   const isChecked = e.target.checked;
 
-    setSelectedSubCats(
-      isChecked
-        ? [...selectedSubCats, value]
-        : selectedSubCats.filter((item) => item !== value)
-    );
-  };
+  //   setSelectedSubCats(
+  //     isChecked
+  //       ? [...selectedSubCats, value]
+  //       : selectedSubCats.filter((item) => item !== value)
+  //   );
+  // };
 
   return (
     <div className="products">
@@ -39,7 +40,7 @@ const Products = () => {
                 value={item.id}
                 onChange={handleChange}
               />
-              <label htmlFor={item.id}>{item.attributes.title}</label>
+              {/* <label htmlFor={item.id}>{item.attributes.title}</label> */}
             </div>
           ))}
         </div>

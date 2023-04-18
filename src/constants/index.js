@@ -4,7 +4,7 @@ import { facebook, instagram, linkedin, twitter } from "../assets";
 export const shop = {
    name: "Real Sparkler",
    tagline: "Gemstone Company & Luxury Pieces.",
-   phone: "+1 617 465 8768",
+   phone: "",
 };
 
 export const navLinksLeft = [
@@ -24,17 +24,17 @@ export const navLinksRight = [
    {
       id: "ruby",
       title: "RUBY",
-      url: "/gem/ruby",
+      url: "/gems/ruby",
    },
    {
       id: "spinel",
       title: "SPINEL",
-      url: "/gem/spinel",
+      url: "/gems/spinel",
    },
    {
       id: "sapphire",
       title: "SAPPHIRE",
-      url: "/gem/sapphire",
+      url: "/gems/sapphire",
    },
    // {
    //    id: "aquamarine",
