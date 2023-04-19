@@ -1,21 +1,17 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import { banner1 } from "../../assets";
-import { shop } from "../../constants";
 
-const Header = () => {
+const Header = ({header, body}) => {
 
 
   return (
-      <div className="bg-black bg-center bg-no-repeat md:py-[70px] sm:py-[40px] h-[40vh] text-center font-[400]"
+      <div className="bg-black bg-center bg-no-repeat md:py-[90px] py-[50px] h-[40vh] text-center mx-auto"
          style={{
             backgroundImage: `url(${banner1})`,
          }}>
-         <h1> About Us</h1>
+         <h1 className='text-5xl'> {header} </h1>
          <div className="w-[400px] flex justify-center items-center flex-wrap m-auto h-full">
-            Initially incorporated as a mining company in 1974, we have been
-            involved in all facets of the colored gemstone trade in our many
-            years active in the industry.
+            {body}
          </div>
       </div>
 
