@@ -5,7 +5,8 @@ import { shop, navLinksRight, navLinksLeft, navLinksMore } from "../../constants
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import "./Navbar.scss"
+
+import "./Navbar.scss";
 
 
 const Navbar = () => {
@@ -63,7 +64,7 @@ const Navbar = () => {
                   ))}
                </div>
 
-               <div className="icons">
+               <Link to='/login' className="icons">
                   {/* <SearchIcon/> */}
                   <PersonOutlineOutlinedIcon />
                   <FavoriteBorderOutlinedIcon />
@@ -71,7 +72,7 @@ const Navbar = () => {
                      <ShoppingCartOutlinedIcon />
                      {/* <span>{ products.length }</span> */}
                   </div>
-               </div>
+               </Link>
 
                <div className='sm:hidden flex flex-1 justify-end items-center cursor-pointer'>
                   <img src={toggle ? close : menu}
@@ -113,14 +114,18 @@ const Navbar = () => {
                   className='bg-[#333] list-none flex flex-col justify-end items-center flex-1'>
 
                   {navLinkMobile.map((nav, index) => (
-                     <a className={`text-white font-poppins font-normal cursor-pointer text-[14px] border w-[100%] p-2 my-1 hover:bg-[#444]`} href={`#${nav.id}`}>
+                     <Link
+                        className={`text-white font-poppins font-normal cursor-pointer text-[14px] border w-[100%] p-2 my-1 hover:bg-[#444]`}
+                        to={`${nav.url}`}                        
+                        onClick={() => setToggle((togglePrev) => !togglePrev)}
+                     >
                         <li
                            key={nav.id}
                            className={``}
                         >
                            {nav.title}
                         </li>
-                     </a>
+                     </Link>
                   ))}
 
                </ul>

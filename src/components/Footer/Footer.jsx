@@ -1,8 +1,13 @@
 import { shop, footerLinks, socialMedia } from "../../constants";
+import Recognition from "../../components/Recognition/Recognition";
 import "./Footer.scss";
 
 const Footer = () => (
+
    <section className={`flexCenter paddingY flex-col`}>
+
+      <Recognition />
+
       <div className={`flexStart md:flex-row flex-col mb-8 w-full`}>
          <div className="flex-[1] flex flex-col justify-start mr-10 max-w-[312px]">
             <div>
@@ -63,7 +68,7 @@ const Footer = () => (
           <img src="/img/payment.png" alt="" />
         </div>
       </div>
-      
+
          <p className="font-default font-normal text-center text-[18px] leading-[27px] text-white">
             &copy; {new Date().getFullYear()} {shop.name}. All Rights Reserved.
          </p>

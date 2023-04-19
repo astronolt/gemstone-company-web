@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { spinel, rhodolite, aquamarine, rarities, rockKnuckle, forbes } from "../../assets/";
+import { spinel, rhodolite, aquamarine, rarities, almondPendant } from "../../assets/";
 
 import "./Categories.scss";
 
@@ -15,8 +15,8 @@ const Categories = () => {
         <div className="hidden sm:flex col">
           <div className="flex row">
             <img
-              src={rockKnuckle}
-              alt="rockKnuckle"
+              src={almondPendant}
+              alt="almondPendant"
             />
             <button>
               <Link className="link text-black" to="/gems/spinel">

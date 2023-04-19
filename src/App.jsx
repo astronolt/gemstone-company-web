@@ -6,7 +6,6 @@ import Home from "./pages/Home/Home";
 // import Product from "./pages/Product/Product";
 import AboutCompany from "./pages/AboutCompany/AboutCompany";
 import AboutUs from "./pages/AboutUs/AboutUs";
-import Recognition from "./components/Recognition/Recognition";
 import Footer from "./components/Footer/Footer";
 
 import './App.scss';
@@ -25,7 +24,6 @@ const Layout = () => {
       <Outlet />
 
       <div className="p-4 md:p-8">
-        <Recognition />
         <Footer />
       </div>
     </div>

@@ -4,6 +4,9 @@ import { forbes, lux } from "../../assets/";
 const Recognition = () => {
    return (
       <div className="my-[50px] p-2 bg-black-gradient-1">
+
+         <hr className='md:w-[50%] sm:w-[70%] mx-auto' />
+
          <div className="my-8 p-2 bg-black-gradient-1 text-center md:flex md:justify-center md:items-center">
             <p className="mb-4 md:mb-0 md:mx-4">FEATURED IN</p>
             <div className="flex justify-center md:justify-start items-center">
@@ -15,7 +18,20 @@ const Recognition = () => {
                </span>
             </div>
          </div>
-         <hr className='md:w-[50%] sm:w-[70%] mx-auto' />
+
+         <div class="bg-[#aaa] text-[#222] flex justify-center items-center h-16 space-x-8">
+            <div>
+               GIA
+            </div>
+            <div>
+               ICA Member
+            </div>
+         </div>
+         <div class="bg-[white] text-[#222] flex justify-center items-center h-16">
+            <img src={forbes} alt="" />
+            <img src={forbes} alt="" />
+            <img src={forbes} alt="" />
+         </div>
       </div>
    )
 }

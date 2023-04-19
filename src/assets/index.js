@@ -7,8 +7,11 @@ import spinners3 from "./spinners/spinners-3.jpg";
 
 //featured
 import jewelryStory from "./featured/jewelry-story.png";
-import rockKnuckle from "./featured/rock-knuckle.jpg";
+import almondPendant from "./featured/almond-pendant.jpg";
 import rarities from "./featured/more-rarities.jpg";
+
+//banner
+import banner1 from "./banner/banner-1.png";
 
 import aquamarine from "./gems/aquamarine.png";
 import spinel from "./gems/spinel.png";
@@ -17,6 +20,9 @@ import tsavorite from "./gems/tsavorite.png";
 
 import forbes from "./forbes.png";
 import lux from "./lux.png";
+import lg1 from "./lg1.png";
+import lg2 from "./lg2.png";
+import lg3 from "./lg3.png";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import facebook from "./facebook.svg";
@@ -30,8 +36,10 @@ export {
   spinners2,
   spinners3,
 
+  banner1,
+
   jewelryStory,
-  rockKnuckle,
+  almondPendant,
   rarities,
 
   tsavorite,
@@ -39,7 +47,9 @@ export {
   rhodolite,
   spinel,
 
-
+  lg1,
+  lg2,
+  lg3,
   forbes,
   lux,
   instagram,
