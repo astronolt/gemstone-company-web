@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
 import Banner from '../../components/Banner/Banner';
 
-
-const AboutCompany = () => {
+const WhyUs = () => {
    return (
-     < div>
+      < div>
          <Banner
-            header='About Us'
+            header='Why Choose Us'
             body="Initially incorporated as a mining company, we have been involved in all facets of the colored gemstone trade in our many years active in the industry." />
 
          <div className="flex flex-wrap md:flex-nowrap">
@@ -34,4 +33,4 @@ const AboutCompany = () => {
    )
 }
 
-export default AboutCompany
+export default WhyUs

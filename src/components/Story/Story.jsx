@@ -11,7 +11,7 @@ const FeaturedProducts = ({ type }) => {
 
    return (
 
-      <div className="flex flex-wrap bg-black md:py-[70px] sm:py-[40px] sm:h-[70vh]">
+      <div className="flex flex-wrap bg-black md:py-[70px] sm:py-[0px] sm:h-[70vh]">
          <div className="w-full bg-right-bottom bg-no-repeat"
             style={{
                backgroundImage: `url(${jewelryStory})`,
@@ -20,8 +20,8 @@ const FeaturedProducts = ({ type }) => {
 
                <h1 className="text-4xl font-bold mb-4">Our Story</h1>
 
-               <div className="md:flex md:p-4 block">
-                  <div className="md:p-4">
+               <div className="md:flex md:p-2 block">
+                  <div className="md:p-2">
                      <p>
                      {shop.name} has been a leading miner and cutter of fine gemstones since 1990. Based at the source of one of the world’s most exciting gem producing areas we are in the enviable position to be able to select out the very best rough crystals as they come out of the mines.
                      </p>
@@ -35,7 +35,7 @@ const FeaturedProducts = ({ type }) => {
                      </Link>                     
                   </div>
 
-                  <div className="md:p-4 my-7 relative">
+                  <div className="md:p-2 my-7 relative">
 
                      <h3 className="text-3xl"> Fine Gemstones are our Passion not just our Business. </h3>
 

@@ -42,10 +42,11 @@ const Navbar = () => {
                   <span className='hidden lg:inline'>
                      Real
                   </span>
-                  <img src="/logo.svg" alt="logo" className='inline w-[40px] mx-[5px] py-[10px]' />
+                  <img src="/logo.svg" alt="logo" className='inline w-[40px] mx-[5px] py-[10px]'
+                     onClick={() => setToggle(false)} />
                   <span className='hidden lg:inline'>
                      Sparklers
-                  </span>                  
+                  </span>
                </Link>
             </div>
 
@@ -116,7 +117,7 @@ const Navbar = () => {
                   {navLinkMobile.map((nav, index) => (
                      <Link
                         className={`text-white font-poppins font-normal cursor-pointer text-[14px] border w-[100%] p-2 my-1 hover:bg-[#444]`}
-                        to={`${nav.url}`}                        
+                        to={`${nav.url}`}
                         onClick={() => setToggle((togglePrev) => !togglePrev)}
                      >
                         <li

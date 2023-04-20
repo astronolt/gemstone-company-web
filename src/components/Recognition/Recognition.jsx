@@ -1,5 +1,5 @@
 import React from 'react';
-import { forbes, lux } from "../../assets/";
+import { forbes, lux, lg1, lg2, lg3 } from "../../assets/";
 
 const Recognition = () => {
    return (
@@ -28,9 +28,8 @@ const Recognition = () => {
             </div>
          </div>
          <div class="bg-[white] text-[#222] flex justify-center items-center h-16">
-            <img src={forbes} alt="" />
-            <img src={forbes} alt="" />
-            <img src={forbes} alt="" />
+            <img src={lg3} alt="" />
+            <img src={lg1} alt="" />
          </div>
       </div>
    )

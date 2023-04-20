@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home";
 // import Products from "./pages/Products/Products";
 // import Product from "./pages/Product/Product";
 import AboutCompany from "./pages/AboutCompany/AboutCompany";
-import AboutUs from "./pages/AboutUs/AboutUs";
+import WhyUs from "./pages/AboutUs/WhyUs";
 import Footer from "./components/Footer/Footer";
 
 import './App.scss';
@@ -65,7 +65,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/why-us",
-        element: <AboutUs />,
+        element: <WhyUs />,
       },
     ],
   },

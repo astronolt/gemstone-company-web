@@ -31,9 +31,8 @@ const Footer = () => (
                <div>
                   {shop.phone}
                </div>
-               <span className="font-default font-normal text-[16px] leading-[24px] text-dimWhite">
+               <span className="text-[80%]">
                   Please note that our normal office hours are 9am to 5:30pm Monday to Friday
-                  and we are 8 hours ahead of Eastern Standard time and 2/3 hours ahead of GMT (depending on British summertime).
                </span>
             </div>
          </div>
