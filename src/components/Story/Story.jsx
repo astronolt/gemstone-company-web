@@ -16,7 +16,7 @@ const FeaturedProducts = ({ type }) => {
             style={{
                backgroundImage: `url(${jewelryStory})`,
             }}>
-            <div className="sm:w-[400px] sm:h-full md:w-[750px] lg:w-[950px] px-4 py-8 bg-[#2229] md:bg-[#5559] lg:ml-[10%]">
+            <div className="sm:w-[400px] sm:h-full md:w-[750px] lg:w-[950px] px-4 py-8 bg-[#2229] md:bg-[#5559] lg:ml-[10%] max-h-[650px]">
 
                <h1 className="text-4xl font-bold mb-4">Our Story</h1>
 

@@ -1,12 +1,14 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+
 import Home from "./pages/Home/Home";
 // import Products from "./pages/Products/Products";
 // import Product from "./pages/Product/Product";
 import AboutCompany from "./pages/AboutCompany/AboutCompany";
 import WhyUs from "./pages/AboutUs/WhyUs";
-import Footer from "./components/Footer/Footer";
+import WorldShipping from "./pages/WorldShipping/WorldShipping";
 
 import './App.scss';
 
@@ -66,6 +68,10 @@ const router = createBrowserRouter([
       {
         path: "/why-us",
         element: <WhyUs />,
+      },
+      {
+        path: "/world-wide-shipping",
+        element: <WorldShipping />,
       },
     ],
   },

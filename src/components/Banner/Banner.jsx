@@ -5,7 +5,7 @@ const Header = ({header, body}) => {
 
 
   return (
-      <div className="bg-black bg-center bg-no-repeat md:py-[90px] py-[50px] h-[40vh] text-center mx-auto"
+      <div className="bg-black bg-center bg-no-repeat md:py-[90px] py-[50px] h-[40vh] text-center mx-auto max-h-[300px]"
          style={{
             backgroundImage: `url(${banner1})`,
          }}>
