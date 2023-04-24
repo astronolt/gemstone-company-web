@@ -4,8 +4,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
 import Home from "./pages/Home/Home";
-// import Products from "./pages/Products/Products";
+import Products from "./pages/Products/Products";
 // import Product from "./pages/Product/Product";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
 import AboutCompany from "./pages/AboutCompany/AboutCompany";
 import WhyUs from "./pages/AboutUs/WhyUs";
 import WorldShipping from "./pages/WorldShipping/WorldShipping";
@@ -41,10 +43,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      // {
-      //   path: "/rare-gemstones",
-      //   element: <Products />,
-      // },
+      {
+        path: "/rare-gemstones",
+        element: <Products type=""/>,
+      },
       // {
       //   path: "/products/:id",
       //   element: <Products />,
@@ -61,6 +63,14 @@ const router = createBrowserRouter([
       //   path: "/rare-gemstones",
       //   element: <Products type="rare-gemstones" />,
       // },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
       {
         path: "/about-company",
         element: <AboutCompany />,

@@ -12,6 +12,7 @@ import rarities from "./featured/more-rarities.jpg";
 
 //banner
 import banner1 from "./banner/banner-1.png";
+import pattern1 from "./pattern-1.png";
 
 import aquamarine from "./gems/aquamarine.png";
 import spinel from "./gems/spinel.png";
@@ -42,6 +43,7 @@ export {
   spinners3,
 
   banner1,
+  pattern1,
 
   jewelryStory,
   almondPendant,
