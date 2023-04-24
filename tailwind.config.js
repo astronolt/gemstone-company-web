@@ -14,7 +14,7 @@ export default {
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       fontFamily: {
-        default: ["Radio Canada", "sans-serif"],
+        default: ["Prata", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
     },

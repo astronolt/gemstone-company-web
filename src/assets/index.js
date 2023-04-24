@@ -18,11 +18,16 @@ import spinel from "./gems/spinel.png";
 import rhodolite from "./gems/rhodolite.png";
 import tsavorite from "./gems/tsavorite.png";
 
-import forbes from "./forbes.png";
-import lux from "./lux.png";
 import lg1 from "./lg1.png";
 import lg2 from "./lg2.png";
 import lg3 from "./lg3.png";
+import ica from "./ica.png";
+import face1 from "./face1.png";
+import face2 from "./face2.png";
+import face3 from "./face3.png";
+import face4 from "./face4.jpg";
+import forbes from "./forbes.png";
+import lux from "./lux.png";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import facebook from "./facebook.svg";
@@ -50,8 +55,13 @@ export {
   lg1,
   lg2,
   lg3,
+  ica,
   forbes,
   lux,
+  face1,
+  face2,
+  face3,
+  face4,
   instagram,
   linkedin,
   facebook,

@@ -91,7 +91,7 @@ const Navbar = () => {
 
 
          {/* NAV BAR MORE*/}
-         <div className='item list-none hidden sm:flex justify-center items-center border-2 p-2 overflow'>
+         <div className='item list-none hidden sm:flex justify-center items-center border-4 border-[#5556] p-2 overflow'>
             {navLinksMore.map((nav, index) => (
                <Link
                   key={nav.id}
