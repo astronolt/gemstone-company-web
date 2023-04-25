@@ -47,22 +47,18 @@ const router = createBrowserRouter([
         path: "/rare-gemstones",
         element: <Products type=""/>,
       },
-      // {
-      //   path: "/products/:id",
-      //   element: <Products />,
-      // },
+      {
+        path: "/gems/:id",
+        element: <Products />,
+      },
       // {
       //   path: "/product/:id",
       //   element: <Product />,
       // },
-      // {
-      //   path: "/handmade-jewelry",
-      //   element: <Products type="handmade-jewelry" />,
-      // },
-      // {
-      //   path: "/rare-gemstones",
-      //   element: <Products type="rare-gemstones" />,
-      // },
+      {
+        path: "/handmade-jewelry",
+        element: <Products type="handmade-jewelry" />,
+      },
       {
         path: "/login",
         element: <Login />,
