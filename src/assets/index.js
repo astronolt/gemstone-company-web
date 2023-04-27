@@ -12,6 +12,8 @@ import rarities from "./featured/more-rarities.jpg";
 
 //banner
 import banner1 from "./banner/banner-1.png";
+
+//patters
 import pattern1 from "./pattern-1.png";
 
 //gems
@@ -20,8 +22,15 @@ import spinel from "./gems/spinel.png";
 import rhodolite from "./gems/rhodolite.png";
 import tsavorite from "./gems/tsavorite.png";
 
-//
+//content
 import insideMine1 from "./inside-mine-1.jpeg";
+import jewelryBulk from "./jewelry-bulk.png";
+import miners from "./miners.jpeg";
+import handGem from "./hand-gem.png";
+import giaIcon from "./gia-acct.png";
+import cstIcon from "./cst-1.png";
+import shipping1 from "./shipping-1.png";
+import shipping2 from "./shipping-2.png";
 
 
 //footers
@@ -61,6 +70,13 @@ export {
   spinel,
 
   insideMine1,
+  jewelryBulk,
+  miners,
+  handGem,
+  giaIcon,
+  cstIcon,
+  shipping1,
+  shipping2,
 
   lg1,
   lg2,

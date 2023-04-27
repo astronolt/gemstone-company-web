@@ -1,17 +1,20 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
+//components
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
+//pages
 import Home from "./pages/Home/Home";
 import Products from "./pages/Products/Products";
-// import Product from "./pages/Product/Product";
+import Product from "./pages/Product/Product";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import AboutCompany from "./pages/AboutCompany/AboutCompany";
 import WhyUs from "./pages/AboutUs/WhyUs";
 import WorldShipping from "./pages/WorldShipping/WorldShipping";
 
+//styles
 import './App.scss';
 
 
@@ -45,19 +48,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/rare-gemstones",
-        element: <Products type=""/>,
+        element: <Products type="gems" />,
       },
       {
         path: "/gems/:id",
-        element: <Products />,
+        element: <Products type="gems"/>,
       },
-      // {
-      //   path: "/product/:id",
-      //   element: <Product />,
-      // },
       {
         path: "/handmade-jewelry",
-        element: <Products type="handmade-jewelry" />,
+        element: <Products type="jewelry" />,
+      },
+      {
+        path: "/product/:id",
+        element: <Product />,
       },
       {
         path: "/login",

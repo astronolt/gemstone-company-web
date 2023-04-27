@@ -8,7 +8,7 @@ const Card = ({ item }) => {
     <Link className="link" to={`/product/${item.id}`}>
       <div className="card">
         <div className="image">
-          {item?.attributes.isNew && <span>New Season</span>}
+          {item?.attributes.isNew && <span>NEW!</span>}
           <img
             src={
               item.attributes.img

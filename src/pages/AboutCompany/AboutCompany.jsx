@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../../components/Banner/Banner';
 import {
-   insideMine1,
+   insideMine1, jewelryBulk,
    face1, face2, face3, face4,
    ica
 } from "../../assets";
@@ -41,16 +41,16 @@ const AboutCompany = () => {
 
 
 
-         <div className="flex flex-wrap md:flex-nowrap justify-center items-center min-h-[300px] m-auto md:w-5/6 md:text-2xl my-4">
+         <div className="flex flex-wrap md:flex-nowrap justify-center items-center min-h-[300px] bg-[#d3dddd] m-auto md:w-5/6 md:text-2xl my-4 text-black">
 
             <div className="w-full md:w-1/2 p-4 text-center">
                <h1 className="md:text-2xl font-bold">
                   Fine
                   <br />
                   HANDMADE JEWELRY
-                  <hr />
+                  <hr className='border-black' />
                </h1>
-               <p className='p-2'>
+               <p className='p-2 md:m-4'>
                   Unique, One-of-a-Kind jewelry handmade with
                   cherrypicked, top grade colored gemstones.
                </p>
@@ -58,7 +58,7 @@ const AboutCompany = () => {
 
             <div className="w-full md:w-1/2 p-4 text-center">
                {/* Content for the second column */}
-               <img src={insideMine1} className="w-full h-full sm:max-w-[400px] md:max-w-full object-cover m-auto" alt="your-alt-text" />
+               <img src={jewelryBulk} className="w-full h-full sm:max-w-[400px] md:max-w-full object-cover m-auto" alt="your-alt-text" />
             </div>
          </div>
 
@@ -70,24 +70,25 @@ const AboutCompany = () => {
                In over {new Date().getFullYear() - shop.year} years of being immersed in the gemstone trade, we have had the honor of working with royalty and celebrity.
             </h2>
 
-            <div className='flex flex-wrap md:flex-nowrap justify-center items-center m-2 space-x-5'>
-               <div className='w-full h-full md:w-1/4 max-w-[250px]'>
-                  <img src={face1} alt="" className='w-full h-full object-cover max-w-[300px]' />
-               </div>
-               <div className='w-full md:w-1/4 max-w-[250px]'>
-                  <img src={face2} alt="" className='w-full object-cover max-w-[300px]' />
-               </div>
-               <div className='w-full md:w-1/4 max-w-[250px]'>
-                  <img src={face3} alt="" className='w-full object-cover max-w-[300px]' />
-               </div>
-               <div className='w-full md:w-1/4 max-w-[250px]'>
-                  <img src={face4} alt="" className='w-full max-w-[300px]' />
+
+            <div>
+               <div className="flex flex-wrap justify-center">
+                  <div key={1} className="w-full sm:w-1/4 md:w-1/4 max-w-[200px] md:p-2 border-4 border-[#4444]">
+                     <img src={face1} alt="" className="w-full h-full object-cover" />
+                  </div>
+                  <div key={1} className="w-full sm:w-1/4 md:w-1/4 max-w-[200px] md:p-2 border-4 border-[#4444]">
+                     <img src={face2} alt="" className="w-full h-full object-cover" />
+                  </div>
+                  <div key={1} className="w-full sm:w-1/4 md:w-1/4 max-w-[200px] md:p-2 border-4 border-[#4444]">
+                     <img src={face3} alt="" className="w-full h-full object-cover" />
+                  </div>
+                  <div key={1} className="w-full sm:w-1/4 md:w-1/4 max-w-[200px] md:p-2 border-4 border-[#4444]">
+                     <img src={face4} alt="" className="w-full h-full object-cover" />
+                  </div>
                </div>
             </div>
 
          </div>
-
-
 
          <div className='bg-[#e8e7e7] text-black md:text-2xl p-4 py-12'>
             <h1>Recognition in the Industry</h1>
@@ -99,7 +100,7 @@ const AboutCompany = () => {
                   The ICA - International Colored Gemstone Association is headquartered in New York and represents the worldwide colored gemstone industry. It has a strict code of ethics adhered to by all members.
                   <br />
                   <br />
-                  Antony Zagoritis, our Head Gemologist and one of our directors, is currently serving as the Ambassador to Kenya for the ICA.
+                  Head Gemologist and one of our directors, is currently serving as the Ambassador for the ICA.
                </div>
             </div>
          </div>
