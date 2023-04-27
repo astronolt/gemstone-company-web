@@ -1,6 +1,11 @@
 import React from 'react';
 import Banner from '../../components/Banner/Banner';
-import { ica, face1, face2, face3 } from "../../assets";
+import {
+   insideMine1,
+   face1, face2, face3, face4,
+   ica
+} from "../../assets";
+import { shop } from "../../constants";
 
 
 const AboutCompany = () => {
@@ -13,6 +18,12 @@ const AboutCompany = () => {
          <div className="flex flex-wrap md:flex-nowrap justify-center items-center min-h-[300px] m-auto md:w-5/6 md:text-2xl bg-[#333] my-4">
 
             <div className="w-full md:w-1/2 p-4 text-center">
+               <img src={insideMine1} className="w-full h-full sm:max-w-[400px] md:max-w-full object-cover m-auto" alt="your-alt-text" />
+            </div>
+
+            <div className="w-full md:w-1/2 p-4 text-center">
+               {/* Content for the second column */}
+
                <h1 className="md:text-2xl font-bold">
                   Direct from
                   <br />
@@ -26,9 +37,13 @@ const AboutCompany = () => {
                   GIA GEMOLOGIST SELECTED.
                </p>
             </div>
+         </div>
+
+
+
+         <div className="flex flex-wrap md:flex-nowrap justify-center items-center min-h-[300px] m-auto md:w-5/6 md:text-2xl my-4">
 
             <div className="w-full md:w-1/2 p-4 text-center">
-               {/* Content for the second column */}
                <h1 className="md:text-2xl font-bold">
                   Fine
                   <br />
@@ -40,6 +55,11 @@ const AboutCompany = () => {
                   cherrypicked, top grade colored gemstones.
                </p>
             </div>
+
+            <div className="w-full md:w-1/2 p-4 text-center">
+               {/* Content for the second column */}
+               <img src={insideMine1} className="w-full h-full sm:max-w-[400px] md:max-w-full object-cover m-auto" alt="your-alt-text" />
+            </div>
          </div>
 
 
@@ -47,25 +67,26 @@ const AboutCompany = () => {
 
             <h2 className='m-4'>
                Royalty & Celebrity
-               In over 40 years of being immersed in the gemstone trade, we have had the honor of working with royalty and celebrity.
+               In over {new Date().getFullYear() - shop.year} years of being immersed in the gemstone trade, we have had the honor of working with royalty and celebrity.
             </h2>
 
             <div className='flex flex-wrap md:flex-nowrap justify-center items-center m-2 space-x-5'>
                <div className='w-full h-full md:w-1/4 max-w-[250px]'>
-                  <img src={face1} alt="" className='w-full h-full object-cover max-w-[300px]'/>
+                  <img src={face1} alt="" className='w-full h-full object-cover max-w-[300px]' />
                </div>
                <div className='w-full md:w-1/4 max-w-[250px]'>
-                  <img src={face2} alt="" className='w-full object-cover max-w-[300px]'/>
+                  <img src={face2} alt="" className='w-full object-cover max-w-[300px]' />
                </div>
                <div className='w-full md:w-1/4 max-w-[250px]'>
-                  <img src={face3} alt="" className='w-full object-cover max-w-[300px]'/>
+                  <img src={face3} alt="" className='w-full object-cover max-w-[300px]' />
                </div>
                <div className='w-full md:w-1/4 max-w-[250px]'>
-                  <img src={face3} alt="" className='w-full max-w-[300px]'/>
+                  <img src={face4} alt="" className='w-full max-w-[300px]' />
                </div>
             </div>
 
          </div>
+
 
 
          <div className='bg-[#e8e7e7] text-black md:text-2xl p-4 py-12'>

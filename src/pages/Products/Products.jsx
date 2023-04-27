@@ -17,7 +17,18 @@ const Products = () => {
   // );
 
   const data = [
-    {}
+    {
+      id: 1,
+      attributes: {
+        title: "title"
+      }
+    },
+    {
+      id: 2,
+      attributes: {
+        title: "title"
+      }
+    }
   ];
 
   const handleChange = (e) => {
@@ -44,7 +55,7 @@ const Products = () => {
                 value={item.id}
                 onChange={handleChange}
               />
-              {/* <label htmlFor={item.id}>{item.attributes.title}</label> */}
+              <label htmlFor={item.id}>{item.attributes.title}</label>
             </div>
           ))}
         </div>

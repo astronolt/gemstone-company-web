@@ -9,8 +9,69 @@ const List = ({ subCats, maxPrice, sort, catId }) => {
   //     (item) => `&[filters][sub_categories][id][$eq]=${item}`
   //   )}&[filters][price][$lte]=${maxPrice}&sort=price:${sort}`
   // );
-  const data = {};
-  const loading = true;
+  const data = [
+    {
+      id: 1,
+      attributes: {
+        isNew: 1,
+        img: 1,
+        img2: 1,
+        title: "title 1",
+        price: 1000,
+      },
+    },
+    {
+      id: 2,
+      attributes: {
+        isNew: 1,
+        img: 1,
+        img2: 1,
+        title: "title 1",
+        price: 1000,
+      },
+    },
+    {
+      id: 2,
+      attributes: {
+        isNew: 1,
+        img: 1,
+        img2: 1,
+        title: "title 1",
+        price: 1000,
+      },
+    },
+    {
+      id: 2,
+      attributes: {
+        isNew: 1,
+        img: 1,
+        img2: 1,
+        title: "title 1",
+        price: 1000,
+      },
+    },
+    {
+      id: 2,
+      attributes: {
+        isNew: 1,
+        img: 1,
+        img2: 1,
+        title: "title 1",
+        price: 1000,
+      },
+    },
+    {
+      id: 2,
+      attributes: {
+        isNew: 1,
+        img: 1,
+        img2: 1,
+        title: "title 1",
+        price: 1000,
+      },
+    }
+  ];
+  const loading = false;
 
   return (
     <div className="list">

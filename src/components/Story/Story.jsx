@@ -23,35 +23,36 @@ const FeaturedProducts = ({ type }) => {
                <div className="md:flex md:p-2 block">
                   <div className="md:p-2">
                      <p>
-                     {shop.name} has been a leading miner and cutter of fine gemstones since 1990. Based at the source of one of the world’s most exciting gem producing areas we are in the enviable position to be able to select out the very best rough crystals as they come out of the mines.
+                        {shop.name} has been a leading miner and cutter of fine gemstones since {shop.year}. Based at the source of one of the world’s most exciting gem producing areas we are in the enviable position to be able to select out the very best rough crystals as they come out of the mines.
                      </p>
 
                      <br />
 
                      <Link to="/why-us" className="text-white">
                         <button>
-                        Why Choose Us
+                           Why Choose Us
                         </button>
-                     </Link>                     
+                     </Link>
                   </div>
 
-                  <div className="md:p-2 my-7 relative">
+                  <div className="md:p-2 my-2 relative">
 
-                     <h3 className="text-3xl"> Fine Gemstones are our Passion not just our Business. </h3>
-
-                     With almost half a century in the industry, in-house cutting center and master cutters, close connections with mine owners and long experience running colored stone mines
-                     <span className="hidden md:inline">
-                     , we offer a vertically integrated service from the mine to the end consumer bypassing the established old chain of distribution and its many built in markups. Our extensive network of miners provide us with the opportunity to have first viewing and selection of all new strikes and production from the mines
-                     </span>.
+                     <h3 className="text-3xl md:bg-[#222] md:p-2"> Fine Gemstones are our Passion not just our Business. </h3>
+                     <p className="md:p-4">
+                        With almost half a century in the industry, in-house cutting center and master cutters, close connections with mine owners and long experience running colored stone mines
+                        <span className="hidden md:inline">
+                           , we offer a vertically integrated service from the mine to the end consumer bypassing the established old chain of distribution and its many built in markups. Our extensive network of miners provide us with the opportunity to have first viewing and selection of all new strikes and production from the mines
+                        </span>.
+                     </p>
 
                      <br />
                      <br />
-                     
+
                      <Link to="about-company" className="text-white">
                         <button>
                            More About Us {">>"}
                         </button>
-                     </Link> 
+                     </Link>
                   </div>
 
                </div>

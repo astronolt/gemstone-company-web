@@ -45,7 +45,7 @@ const Navbar = () => {
                   <img src="/logo.svg" alt="logo" className='inline w-[40px] mx-[5px] py-[10px]'
                      onClick={() => setToggle(false)} />
                   <span className='hidden lg:inline'>
-                     Sparklers
+                     Sparkler
                   </span>
                </Link>
             </div>

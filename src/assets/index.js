@@ -14,11 +14,17 @@ import rarities from "./featured/more-rarities.jpg";
 import banner1 from "./banner/banner-1.png";
 import pattern1 from "./pattern-1.png";
 
+//gems
 import aquamarine from "./gems/aquamarine.png";
 import spinel from "./gems/spinel.png";
 import rhodolite from "./gems/rhodolite.png";
 import tsavorite from "./gems/tsavorite.png";
 
+//
+import insideMine1 from "./inside-mine-1.jpeg";
+
+
+//footers
 import lg1 from "./lg1.png";
 import lg2 from "./lg2.png";
 import lg3 from "./lg3.png";
@@ -53,6 +59,8 @@ export {
   aquamarine,
   rhodolite,
   spinel,
+
+  insideMine1,
 
   lg1,
   lg2,
