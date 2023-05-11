@@ -1,5 +1,5 @@
 import { Suspense, lazy } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import List from "../../components/List/List";
 import BannerShop from '../../components/Banner/BannerShop';
@@ -13,6 +13,8 @@ import "./Products.scss";
 const Products = ({ type }) => {
 
   let products, productData;
+
+  const productPage = "/products/";
 
   const catId = useParams().id;
   //alert(catId);
@@ -61,7 +63,8 @@ const Products = ({ type }) => {
 
       <div className="mx-auto max-w-[1200px] flex flex-wrap -mx-2 mt-8 md:mt-[70px] justify-center">
         {products.map((product) => (
-          <div
+          <Link
+            to={"/product/" + catId + "/" + product.id}
             key={product.id}
             className="w-full md:w-1/2 px-2 mb-4 md:mb-0 m-2 relative max-w-[150px] md:max-w-[200px] h-[200px] md:h-[250px]"
           >
@@ -84,7 +87,7 @@ const Products = ({ type }) => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 

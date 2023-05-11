@@ -59,7 +59,7 @@ const router = createBrowserRouter([
         element: <Products type="gems" />,
       },
       {
-        path: "/product/:id",
+        path: "/product/:type/:id",
         element: <Product />,
       },
       {
