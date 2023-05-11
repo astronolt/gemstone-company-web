@@ -22,6 +22,10 @@ import spinel from "./gems/spinel.png";
 import rhodolite from "./gems/rhodolite.png";
 import tsavorite from "./gems/tsavorite.png";
 
+//ruby
+import ruby from "./gems/ruby.png";
+import rubyRUBC197 from "./gems/ruby/RUBC197.jpg";
+
 //content
 import insideMine1 from "./inside-mine-1.jpeg";
 import jewelryBulk from "./jewelry-bulk.png";
@@ -68,6 +72,9 @@ export {
   aquamarine,
   rhodolite,
   spinel,
+
+  ruby,
+  rubyRUBC197,
 
   insideMine1,
   jewelryBulk,

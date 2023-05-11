@@ -51,12 +51,12 @@ const router = createBrowserRouter([
         element: <Products type="gems" />,
       },
       {
-        path: "/gems/:id",
-        element: <Products type="gems"/>,
-      },
-      {
         path: "/handmade-jewelry",
         element: <Products type="jewelry" />,
+      },
+      {
+        path: "/gems/:id",
+        element: <Products type="gems" />,
       },
       {
         path: "/product/:id",
