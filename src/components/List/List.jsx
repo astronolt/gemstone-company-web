@@ -1,84 +1,43 @@
-import React from "react";
-import "./List.scss";
-import Card from "../../components/Card/Card";
-// import useFetch from "../../../hooks/useFetch";
+import { Link } from "react-router-dom";
 
-const List = ({ subCats, maxPrice, sort, catId }) => {
-  // const { data, loading, error } = useFetch(
-  //   `/products?populate=*&[filters][categories][id]=${catId}${subCats.map(
-  //     (item) => `&[filters][sub_categories][id][$eq]=${item}`
-  //   )}&[filters][price][$lte]=${maxPrice}&sort=price:${sort}`
-  // );
-  const data = [
-    {
-      id: 1,
-      attributes: {
-        isNew: 1,
-        img: 1,
-        img2: 1,
-        title: "title 1",
-        price: 1000,
-      },
-    },
-    {
-      id: 2,
-      attributes: {
-        isNew: 1,
-        img: 1,
-        img2: 1,
-        title: "title 1",
-        price: 1000,
-      },
-    },
-    {
-      id: 2,
-      attributes: {
-        isNew: 1,
-        img: 1,
-        img2: 1,
-        title: "title 1",
-        price: 1000,
-      },
-    },
-    {
-      id: 2,
-      attributes: {
-        isNew: 1,
-        img: 1,
-        img2: 1,
-        title: "title 1",
-        price: 1000,
-      },
-    },
-    {
-      id: 2,
-      attributes: {
-        isNew: 1,
-        img: 1,
-        img2: 1,
-        title: "title 1",
-        price: 1000,
-      },
-    },
-    {
-      id: 2,
-      attributes: {
-        isNew: 1,
-        img: 1,
-        img2: 1,
-        title: "title 1",
-        price: 1000,
-      },
-    }
-  ];
-  const loading = false;
-
+const List = ({ products, catId }) => {
   return (
-    <div className="list">
-      {loading
-        ? "loading"
-        : data?.map((item) => <Card item={item} key={item.id} />)}
-    </div>
+    <>
+      {products.map((product) => (
+        <Link
+          to={"/product/" + catId + "/" + product.id}
+          key={product.id}
+          className="w-full md:w-1/2 px-2 mb-4 md:mb-0 m-2 relative max-w-[150px] md:max-w-[200px] h-[200px] md:h-[250px]"
+        ><div>
+            <div
+              className="h-full border rounded-md overflow-hidden absolute inset-0"
+              style={{
+                backgroundImage: `url(${product.img})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }}
+            >
+              <div className="bg-[#1119] text-white p-2 m-2 relative">
+                {product.name}
+
+                <div className="bg-black p-2 mt-2">
+                  ${product.price}
+                </div>
+              </div>
+
+
+              <div className="bg-black opacity-0 hover:opacity-70 transition duration-300 absolute inset-0 flex justify-center items-center pointer">
+                <div className="p-3 text-center">
+                  <h3 className="text-lg/ font-xs text-gray-100">
+                    {product.survey}
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </>
   );
 };
 

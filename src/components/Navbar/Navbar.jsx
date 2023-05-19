@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import { close, menu } from "../../assets";
-import { shop, navLinksRight, navLinksLeft, navLinksMore } from "../../constants";
+import { navLinksRight, navLinksLeft, navLinksMore } from "../../constants";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -13,6 +13,7 @@ const Navbar = () => {
 
    const [toggle, setToggle] = useState(false);
    const navLinkMobile = [
+      ...navLinksRight,
       ...navLinksLeft,
       ...navLinksMore
    ];
@@ -117,6 +118,7 @@ const Navbar = () => {
                   {navLinkMobile.map((nav, index) => (
                      <Link
                         className={`text-white font-poppins font-normal cursor-pointer text-[14px] border w-[100%] p-2 my-1 hover:bg-[#444]`}
+                        key={nav.id}
                         to={`${nav.url}`}
                         onClick={() => setToggle((togglePrev) => !togglePrev)}
                      >

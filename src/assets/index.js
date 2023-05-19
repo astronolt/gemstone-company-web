@@ -18,13 +18,16 @@ import pattern1 from "./pattern-1.png";
 
 //gems
 import aquamarine from "./gems/aquamarine.png";
-import spinel from "./gems/spinel.png";
 import rhodolite from "./gems/rhodolite.png";
 import tsavorite from "./gems/tsavorite.png";
 
+//spinel
+import spinel from "./gems/spinel.png";
+
 //ruby
-import ruby from "./gems/ruby.png";
-import rubyRUBC197 from "./gems/ruby/RUBC197.jpg";
+import ruby from "./gems/ruby/ruby.png";
+import RUBC197 from "./gems/ruby/RUBC197.jpg";
+import RUBC200 from "./gems/ruby/RUBC200.jpg";
 
 //content
 import insideMine1 from "./inside-mine-1.jpeg";
@@ -74,7 +77,8 @@ export {
   spinel,
 
   ruby,
-  rubyRUBC197,
+  RUBC197,
+  RUBC200,
 
   insideMine1,
   jewelryBulk,

@@ -31,7 +31,7 @@ const Product = () => {
         "loading"
       ) : (
         <>
-          <div className="left">
+          <div className="left/">
             <div className="images">
               <img
                 src=""
@@ -44,14 +44,17 @@ const Product = () => {
                 onClick={(e) => setSelectedImg("img2")}
               />
             </div>
+          </div>
+          <div className="right">
+
+            
             <div className="mainImg">
               <img
                 src=""
                 alt=""
               />
             </div>
-          </div>
-          <div className="right">
+
             <h1>{data?.attributes?.title}</h1>
             <span className="price">
               {/* ${data?.attributes?.price} */}

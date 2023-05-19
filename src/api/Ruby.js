@@ -1,7 +1,7 @@
 import { 
-   ruby,
-   rubyRUBC197,
- } from "../assets";
+   RUBC197, RUBC200,
+   ruby
+} from "../assets";
 
 
 const RubyData = {
@@ -15,18 +15,16 @@ const Ruby = [
    {
       id: "RUBC197",
       name: "Ruby, Cushion 1.05 Carat",
-      weight: 1.05,
       price: 8695.00,
-      img: rubyRUBC197,
-      description: "Outstanding. This is a very fine Ruby indeed. Top color and clarity and entirely untreated - which is very rare in today's market where thermally treated Rubies abound."
+      survey: "Eyeclean almost loupeclean some small low relief only visible with magnification",
+      img: RUBC197
    },
    {
-      id: "RUBC197",
-      name: "Ruby, Cushion 1.05 Carat",
-      weight: 1.05,
+      id: "RUBC200",
+      name: "Ruby, Cushion 1.02 Carat",
       price: 8695.00,
-      img: rubyRUBC197,
-      description: "Outstanding. This is a very fine Ruby indeed. Top color and clarity and entirely untreated - which is very rare in today's market where thermally treated Rubies abound."
+      survey: "Eyeclean, almost loupeclean. Two tiny feathers",
+      img: RUBC200
    },
 ];
 
