@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import List from "../../components/List/List";
 import BannerShop from '../../components/Banner/BannerShop';
 
-import { Ruby, RubyData } from "../../api/ruby";
+import { Ruby, RubyData } from "../../api/Ruby";
 import { Spinel, SpinelData } from "../../api/Spinel";
 
 import "./Products.scss";
