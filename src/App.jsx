@@ -47,14 +47,6 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/rare-gemstones",
-        element: <Products type="gems" />,
-      },
-      {
-        path: "/handmade-jewelry",
-        element: <Products type="jewelry" />,
-      },
-      {
         path: "/gems/:id",
         element: <Products type="gems" />,
       },

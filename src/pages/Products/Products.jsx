@@ -6,6 +6,8 @@ import BannerShop from '../../components/Banner/BannerShop';
 
 import { Ruby, RubyData } from "../../api/Ruby";
 import { Spinel, SpinelData } from "../../api/Spinel";
+import { RareGemstones, RareGemstonesData } from "../../api/RareGemstones";
+import { HandmadeJewlry, HandmadeJewlryData } from "../../api/HandmadeJewelry";
 
 import "./Products.scss";
 
@@ -29,6 +31,14 @@ const Products = ({ type }) => {
       case 'spinel':
         setProductList(Spinel);
         setproductData(SpinelData);
+        break;
+      case 'rare-gemstones':
+        setProductList(RareGemstones);
+        setproductData(RareGemstonesData);
+        break;
+      case 'handmade-jewelry':
+        setProductList(HandmadeJewlry);
+        setproductData(HandmadeJewlryData);
         break;
       default:
         // products = Ruby;

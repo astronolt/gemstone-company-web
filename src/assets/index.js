@@ -29,6 +29,15 @@ import ruby from "./gems/ruby/ruby.png";
 import RUBC197 from "./gems/ruby/RUBC197.jpg";
 import RUBC200 from "./gems/ruby/RUBC200.jpg";
 
+
+//rare gemstones
+import rareGemstones from "./gems/rare-gemstones/rare-gemstones.png";
+import LSTP087 from "./gems/handmade-jewelry/LSTP087.jpg";
+
+//handmade jewelry
+import handmadeJewelry from "./gems/handmade-jewelry/gemstone-jewel.png";
+//import LSTP087 from "./gems/handmade-jewelry/LSTP087.jpg";
+
 //content
 import insideMine1 from "./inside-mine-1.jpeg";
 import jewelryBulk from "./jewelry-bulk.png";
@@ -79,6 +88,11 @@ export {
   ruby,
   RUBC197,
   RUBC200,
+
+  handmadeJewelry,
+  LSTP087,
+
+  rareGemstones,
 
   insideMine1,
   jewelryBulk,

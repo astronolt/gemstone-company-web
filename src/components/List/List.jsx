@@ -5,7 +5,8 @@ const List = ({ products, catId }) => {
     <>
       {products.map((product) => (
         <Link
-          to={"/product/" + catId + "/" + product.id}
+          // to={"/product/" + catId + "/" + product.id}
+          to={"/login"}
           key={product.id}
           className="w-full md:w-1/2 px-2 mb-4 md:mb-0 m-2 relative max-w-[150px] md:max-w-[200px] h-[200px] md:h-[250px]"
         ><div>

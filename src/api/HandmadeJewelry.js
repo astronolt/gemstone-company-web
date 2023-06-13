@@ -1,17 +1,17 @@
 import { 
    LSTP087,
-   rareGemstones
+   handmadeJewelry
 } from "../assets";
 
 
-const RareGemstonesData = {
-   header: "Rare Gemstones",
-   summary: "Its rich geological history means that a wide variety of fine gems formed within it. Some are rare and extremely interesting and we showcase them here.",
-   img: rareGemstones,
+const HandmadeJewlryData = {
+   header: "Handmade Jewelry",
+   summary: "A selection of gorgeous colored gemstone jewelry, all unique pieces. An array of colors and designs, all one-of-a-kind. ",
+   img: handmadeJewelry,
 };
 
 
-const RareGemstones = [
+const HandmadeJewlry = [
    {
       id: "LSTP087",
       name: "Green Tourmaline Pendant",
@@ -30,6 +30,6 @@ const RareGemstones = [
 
 
 export {
-   RareGemstonesData,
-   RareGemstones,
+   HandmadeJewlryData,
+   HandmadeJewlry,
 }

@@ -4,7 +4,7 @@ import { facebook, instagram, linkedin, twitter } from "../assets";
 export const shop = {
    name: "Real Sparkler",
    tagline: "Gemstone Company & Luxury Pieces.",
-   phone: "+1 617 465 8768",
+   phone: "+1 801 618 0360",
    year: 2000,
 };
 
@@ -12,12 +12,12 @@ export const navLinksLeft = [
    {
       id: "rare-gemstones",
       title: "Rare Gemstones",
-      url: "/rare-gemstones",
+      url: "/gems/rare-gemstones",
    },
    {
       id: "handmade-jewelry",
       title: "Handmade Jewelry",
-      url: "/handmade-jewelry",
+      url: "/gems/handmade-jewelry",
    },
 ];
 
