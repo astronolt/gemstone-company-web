@@ -23,12 +23,49 @@ import tsavorite from "./gems/tsavorite.png";
 
 //spinel
 import spinel from "./gems/spinel.png";
+import SPC162 from "./gems/spinel/SPC162.jpg";
+import SPC167 from "./gems/spinel/SPC167.jpg";
+import SPC166 from "./gems/spinel/SPC166.jpg";
+import SPC170 from "./gems/spinel/SPC170.jpg";
+import SPC172 from "./gems/spinel/SPC172.jpg";
+import SPC175 from "./gems/spinel/SPC175.jpg";
+import SPC174 from "./gems/spinel/SPC174.jpg";
+import SPC177 from "./gems/spinel/SPC177.jpg";
+import SPC179 from "./gems/spinel/SPC179.jpg";
+import SPC181 from "./gems/spinel/SPC181.jpg";
+import SPC189 from "./gems/spinel/SPC189.jpg";
+import SPC190 from "./gems/spinel/SPC190.jpg";
 
 //ruby
 import ruby from "./gems/ruby/ruby.png";
+import RUBC072 from "./gems/ruby/RUBC072.jpg";
+import RUBC182 from "./gems/ruby/RUBC182.jpg";
+import RUBC185 from "./gems/ruby/RUBC185.jpg";
+import RUBC189 from "./gems/ruby/RUBC189.jpg";
+import RUBC192 from "./gems/ruby/RUBC192.jpg";
+import RUBC194 from "./gems/ruby/RUBC194.jpg";
+import RUBC195 from "./gems/ruby/RUBC195.jpg";
+import RUBC196 from "./gems/ruby/RUBC196.jpg";
 import RUBC197 from "./gems/ruby/RUBC197.jpg";
+import RUBC198 from "./gems/ruby/RUBC198.jpg";
+import RUBC199 from "./gems/ruby/RUBC199.jpg";
 import RUBC200 from "./gems/ruby/RUBC200.jpg";
+import RUBC201 from "./gems/ruby/RUBC201.jpg";
 
+//sapphire
+import sapphire from "./gems/sapphire/sapphire.png";
+import FSC505 from "./gems/sapphire/FSC505.jpg";
+import FSC510 from "./gems/sapphire/FSC510.jpg";
+import FSC511 from "./gems/sapphire/FSC511.jpg";
+import FSC474 from "./gems/sapphire/FSC474.jpg";
+import FSC507 from "./gems/sapphire/FSC507.jpg";
+import FSC492 from "./gems/sapphire/FSC492.jpg";
+import FSC481 from "./gems/sapphire/FSC481.jpg";
+import FSC500 from "./gems/sapphire/FSC500.jpg";
+import FSC497 from "./gems/sapphire/FSC497.jpg";
+import FSC484 from "./gems/sapphire/FSC484.jpg";
+import FSC495 from "./gems/sapphire/FSC495.jpg";
+import FSC498 from "./gems/sapphire/FSC498.jpg";
 
 //rare gemstones
 import rareGemstones from "./gems/rare-gemstones/rare-gemstones.png";
@@ -83,11 +120,49 @@ export {
   tsavorite,
   aquamarine,
   rhodolite,
+
   spinel,
+  SPC170,
+  SPC162,
+  SPC166,
+  SPC167,
+  SPC174,
+  SPC177,
+  SPC175,
+  SPC172,
+  SPC179,
+  SPC181,
+  SPC189,
+  SPC190,
+  FSC498,
 
   ruby,
+  RUBC072,
+  RUBC182,
+  RUBC185,
+  RUBC189,
+  RUBC192,
+  RUBC194,
+  RUBC195,
+  RUBC196,
   RUBC197,
+  RUBC198,
+  RUBC199,
   RUBC200,
+  RUBC201,
+
+  sapphire,
+  FSC505,
+  FSC511,
+  FSC510,
+  FSC474,
+  FSC507,
+  FSC492,
+  FSC481,
+  FSC500,
+  FSC497,
+  FSC484,
+  FSC495,
 
   handmadeJewelry,
   LSTP087,

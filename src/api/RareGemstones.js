@@ -1,7 +1,8 @@
-import { 
-   LSTP087,
+import {
    rareGemstones
 } from "../assets";
+import { Ruby } from "../api/Ruby";
+import { Spinel } from "../api/Spinel";
 
 
 const RareGemstonesData = {
@@ -12,20 +13,8 @@ const RareGemstonesData = {
 
 
 const RareGemstones = [
-   {
-      id: "LSTP087",
-      name: "Green Tourmaline Pendant",
-      price: 772.00,
-      survey: "Eyeclean almost loupeclean some small low relief only visible with magnification",
-      img: LSTP087
-   },
-   {
-      id: "RUBC200",
-      name: "Ruby, Cushion 1.02 Carat",
-      price: 8695.00,
-      survey: "Eyeclean, almost loupeclean. Two tiny feathers",
-      img: LSTP087
-   },
+   ...Ruby,
+   ...Spinel,
 ];
 
 

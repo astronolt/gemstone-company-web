@@ -8,7 +8,7 @@ import "./Categories.scss";
 const Categories = () => {
   return (
     <div className="">
-      <Link to="/rare-gemstones" className="text-white hover:text-white hover:underline">
+      <Link to="/gems/rare-gemstones" className="text-white hover:text-white hover:underline">
         <h1 className="text-4xl p-4 py-[25px]"> Explore our rare Gemstones </h1>
       </Link>
       <div className="categories">
@@ -19,7 +19,7 @@ const Categories = () => {
               alt="almondPendant"
             />
             <button>
-              <Link className="link text-black" to="/gems/spinel">
+              <Link className="link text-black" to="/gems/rare-gemstones">
                 Rock Sale
               </Link>
             </button>
@@ -45,7 +45,7 @@ const Categories = () => {
               alt="rarities"
             />
             <button>
-              <Link to="/rare-gemstones" className="link">
+              <Link to="/gems/rare-gemstones" className="link">
                 More Rarities
               </Link>
             </button>
@@ -87,7 +87,7 @@ const Categories = () => {
               alt=""
             />
             <button>
-              <Link to="/handmade-jewelry" className="link">
+              <Link to="/gems/handmade-jewelry" className="link">
                 Handmade Jewelries
               </Link>
             </button>
