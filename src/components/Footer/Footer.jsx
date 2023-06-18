@@ -28,7 +28,7 @@ const Footer = () => (
                <h4 className="font-default font-medium text-[18px] leading-[27px] text-white">
                   Contact
                </h4>
-               <div className="hidden/">
+               <div className="hidden">
                   {shop.phone}
                </div>
                <span className="text-[80%]">
