@@ -37,6 +37,14 @@ const Products = ({ type }) => {
         setProductList(Sapphire);
         setproductData(SapphireData);
         break;
+      case 'rhodolite':
+        setProductList(RareGemstones);
+        setproductData(RareGemstonesData);
+        break;
+      case 'aquamarine':
+        setProductList(RareGemstones);
+        setproductData(RareGemstonesData);
+        break;
       case 'rare-gemstones':
         setProductList(RareGemstones);
         setproductData(RareGemstonesData);
