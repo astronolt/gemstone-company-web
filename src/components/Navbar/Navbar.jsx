@@ -41,12 +41,12 @@ const Navbar = () => {
             <div className="center">
                <Link className="link" to="/">
                   <span className='hidden lg:inline'>
-                     Real
+                     Gem
                   </span>
                   <img src="/logo.svg" alt="logo" className='inline w-[40px] mx-[5px] py-[10px]'
                      onClick={() => setToggle(false)} />
                   <span className='hidden lg:inline'>
-                     Sparkler
+                     Stone
                   </span>
                </Link>
             </div>

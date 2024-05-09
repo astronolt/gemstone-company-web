@@ -63,7 +63,7 @@ const AboutCompany = () => {
          </div>
 
 
-         <div className='md:text-2xl my-4 p-4'>
+         {/* <div className='md:text-2xl my-4 p-4'>
 
             <h2 className='m-4'>
                Royalty & Celebrity
@@ -88,7 +88,7 @@ const AboutCompany = () => {
                </div>
             </div>
 
-         </div>
+         </div> */}
 
          <div className='bg-[#e8e7e7] text-black md:text-2xl p-4 py-12'>
             <h1>Recognition in the Industry</h1>

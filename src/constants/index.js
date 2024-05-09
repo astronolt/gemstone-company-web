@@ -2,9 +2,9 @@ import { facebook, instagram, linkedin, twitter } from "../assets";
 
 
 export const shop = {
-   name: "Real Sparkler",
+   name: "Gem Stones",
    tagline: "Gemstone Company & Luxury Pieces.",
-   phone: "+1 801 618 0360",
+   phone: "+1 425 6737539",
    year: 2000,
 };
 
