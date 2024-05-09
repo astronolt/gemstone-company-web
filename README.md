@@ -1,9 +1,9 @@
-A gemstone company
+# A gemstone company
 
 
-## Technologs
-React
-Tailwind Css
-Sass
-Material Icons
-Swiper
+## **Technologies**
+React <br>
+Tailwind Css <br>
+Sass <br>
+Material Icons <br>
+Swiper <br>
